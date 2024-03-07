@@ -5,8 +5,11 @@ import { useAuth } from "../context/AuthProvider";
 import { useState } from "react";
 import axiosBase from "../axios/axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const useLogin = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -25,6 +28,7 @@ const useLogin = () => {
       setLoading(false);
       localStorage.setItem("chat-user", JSON.stringify(response.data));
       setAuthUser(response.data);
+      navigate("/");
       toast.success("User logged successfully");
     } catch (error: any) {
       setLoading(false);

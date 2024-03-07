@@ -4,8 +4,11 @@ import { ISignupFormValues } from "../types/types";
 import { useState } from "react";
 import axiosBase from "../axios/axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const useSignupForm = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -23,6 +26,7 @@ const useSignupForm = () => {
       });
 
       setLoading(false);
+      navigate("/login");
       toast.success("User Signedup successfully");
     } catch (error: any) {
       setLoading(false);

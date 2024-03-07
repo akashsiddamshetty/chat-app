@@ -5,7 +5,7 @@ import useSignupForm from "../hooks/useSignup";
 interface SignupFormProps {}
 
 const SignupForm: FC<SignupFormProps> = () => {
-  
+
   const { onSubmit, register, getValues, errors } = useSignupForm();
 
   return (
