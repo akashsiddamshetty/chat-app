@@ -29,7 +29,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const _socket = io("http://localhost:8000", {
+      const _socket = io("https://chat-app-y9mn.onrender.com", {
         query: {
           userId: authUser._id,
         },
