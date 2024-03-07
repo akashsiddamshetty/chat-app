@@ -1,4 +1,4 @@
-Here's a simple README file you can use for your GitHub repository:
+Here's the updated README file with the test users included:
 
 ---
 
@@ -36,6 +36,16 @@ To start the application, follow these steps:
 - **Socket.IO**: Real-time bidirectional event-based communication
 - **TypeScript**: Typed superset of JavaScript
 - **Tailwind CSS**: Utility-first CSS framework
+
+## Test Users
+
+- **Test User One**
+  - Username: naruto@gmail.com
+  - Password: naruto123
+
+- **Test User Two**
+  - Username: kakashi@gmail.com
+  - Password: kakashi123
 
 ## Contributing
 
